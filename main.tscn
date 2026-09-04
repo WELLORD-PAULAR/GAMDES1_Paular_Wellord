@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://chn4nwp8166nv"]
+
+[ext_resource type="Script" uid="uid://0tfig6ntjwg3" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D" unique_id=1585073305]
+script = ExtResource("1_ig7tw")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1805199504]
+offset_right = 77.0
+offset_bottom = 23.0
+scale = Vector2(2, 2)
+text = "Inn Slayer!"
+
+[node name="Player" type="Sprite2D" parent="." unique_id=466970458]
+
+[node name="Camera" type="Camera2D" parent="Player" unique_id=724185649]
