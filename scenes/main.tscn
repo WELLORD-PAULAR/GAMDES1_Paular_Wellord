@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://chn4nwp8166nv"]
+
+[ext_resource type="Script" uid="uid://0tfig6ntjwg3" path="res://scripts/main.gd" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://b6xhk7j2btpxr" path="res://scenes/player.tscn" id="2_0wfyh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hu2d6"]
+size = Vector2(1152, 40)
+
+[node name="Main" type="Node2D" unique_id=1585073305]
+script = ExtResource("1_o5qli")
+
+[node name="Player" parent="." unique_id=1044865659 instance=ExtResource("2_0wfyh")]
+position = Vector2(485, 228)
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=1690567141]
+position = Vector2(-1, 346)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=580287840]
+shape = SubResource("RectangleShape2D_hu2d6")
+
+[node name="ColorRect" type="ColorRect" parent="Floor" unique_id=378911543]
+offset_left = -576.0
+offset_top = -20.0
+offset_right = 576.0
+offset_bottom = 20.0
+color = Color(0, 0.53333336, 0.39215687, 1)
+metadata/_edit_use_anchors_ = true
