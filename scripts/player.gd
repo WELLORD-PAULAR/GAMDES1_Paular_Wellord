@@ -1,3 +1,4 @@
+# PAULAR WELLORD-IAC2-GAMDES1-10/10/2026
 extends CharacterBody2D
 
 var health = 100
